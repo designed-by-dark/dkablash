@@ -175,6 +175,11 @@ footer{background:var(--black);padding:1.5rem 2.5rem;display:flex;align-items:ce
   .results-bottom{grid-template-columns:1fr 1fr;}
   .results-quote{flex-direction:column;gap:1rem;}
   nav.top .nav-links{display:none;}
+  /* ventures grid */
+  .v-grid-3{grid-template-columns:1fr!important;}
+  /* how I work two-col rows */
+  .how-row{grid-template-columns:1fr!important;}
+  .how-row > div:first-child{border-right:none!important;border-bottom:1px solid var(--border);}
 }
 @media(max-width:600px){
   .stats-strip{grid-template-columns:1fr;}
@@ -222,6 +227,58 @@ footer{background:var(--black);padding:1.5rem 2.5rem;display:flex;align-items:ce
     </div>
   </div>
 </div>
+
+<!-- VENTURES — directly after hero -->
+<section style="background:var(--black);border-top:1px solid var(--border-d);" id="ventures">
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border-d);">
+
+    <!-- GetMarketing -->
+    <a href="https://getmarketing.team" target="_blank" style="background:#111010;padding:2.5rem 2rem;display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:background .2s;" onmouseover="this.style.background='#1a1a1a'" onmouseout="this.style.background='#111010'" data-r>
+      <div style="margin-bottom:1.75rem;height:44px;display:flex;align-items:center;">
+        <img src="https://getmarketing.team/logo.jpg" alt="GetMarketing" style="height:36px;width:auto;display:block;object-fit:contain;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div style="display:none;align-items:center;gap:.6rem;padding:.5rem .9rem;border:1px solid rgba(255,255,255,.12);">
+          <span style="font-size:.7rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--cream);">GET</span>
+          <span style="width:1px;height:14px;background:rgba(255,255,255,.2);display:inline-block;"></span>
+          <span style="font-size:.7rem;font-weight:300;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);">MARKETING</span>
+        </div>
+      </div>
+      <p style="font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:.85rem;">Active · Launching July 2026</p>
+      <p style="font-size:clamp(1.4rem,2.2vw,1.9rem);font-weight:700;letter-spacing:-.02em;color:var(--cream);margin-bottom:.3rem;line-height:1.05;">GetMarketing</p>
+      <p style="font-size:.8rem;font-weight:300;color:rgba(255,255,255,.4);margin-bottom:1.25rem;padding-bottom:1.25rem;border-bottom:1px solid var(--border-d);">Founder & CEO · AI Marketing Platform</p>
+      <p style="font-size:.88rem;font-weight:300;color:rgba(255,255,255,.5);line-height:1.7;flex:1;margin-bottom:1.25rem;">An AI platform for DACH B2B companies that runs multi-agent marketing workflows across SEO, content, and LinkedIn. 24 companies on the waitlist for the July 2026 launch.</p>
+      <span style="font-size:.82rem;font-weight:600;color:var(--red);">getmarketing.team ↗</span>
+    </a>
+
+    <!-- Project Radar -->
+    <div style="background:#111010;padding:2.5rem 2rem;display:flex;flex-direction:column;" data-r data-d="1">
+      <div style="margin-bottom:1.75rem;height:44px;display:flex;align-items:center;">
+        <div style="display:inline-flex;align-items:center;gap:.6rem;padding:.5rem .9rem;border:1px solid rgba(255,255,255,.12);">
+          <span style="font-size:.7rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--cream);">PROJECT</span>
+          <span style="width:1px;height:14px;background:rgba(255,255,255,.2);display:inline-block;"></span>
+          <span style="font-size:.7rem;font-weight:300;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);">RADAR</span>
+        </div>
+      </div>
+      <p style="font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.85rem;">In development</p>
+      <p style="font-size:clamp(1.4rem,2.2vw,1.9rem);font-weight:700;letter-spacing:-.02em;color:var(--cream);margin-bottom:.3rem;line-height:1.05;">Project Radar</p>
+      <p style="font-size:.8rem;font-weight:300;color:rgba(255,255,255,.4);margin-bottom:1.25rem;padding-bottom:1.25rem;border-bottom:1px solid var(--border-d);">Founder & CEO · Freelancer Tool</p>
+      <p style="font-size:.88rem;font-weight:300;color:rgba(255,255,255,.5);line-height:1.7;flex:1;">Aggregates project listings from DACH freelancer platforms and helps users write tailored proposals with AI assistance. Built for the DACH freelance market.</p>
+    </div>
+
+    <!-- palsme -->
+    <div style="background:#111010;padding:2.5rem 2rem;display:flex;flex-direction:column;" data-r data-d="2">
+      <div style="margin-bottom:1.75rem;height:44px;display:flex;align-items:center;">
+        <div style="display:inline-flex;align-items:center;padding:.6rem 1rem;border:1px solid rgba(255,255,255,.12);">
+          <span style="font-size:.85rem;font-weight:300;letter-spacing:.35em;text-transform:lowercase;color:rgba(255,255,255,.6);">palsme</span>
+        </div>
+      </div>
+      <p style="font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.85rem;">Built & sold</p>
+      <p style="font-size:clamp(1.4rem,2.2vw,1.9rem);font-weight:700;letter-spacing:-.02em;color:var(--cream);margin-bottom:.3rem;line-height:1.05;">palsme</p>
+      <p style="font-size:.8rem;font-weight:300;color:rgba(255,255,255,.4);margin-bottom:1.25rem;padding-bottom:1.25rem;border-bottom:1px solid var(--border-d);">Founder · Fashion Brand</p>
+      <p style="font-size:.88rem;font-weight:300;color:rgba(255,255,255,.5);line-height:1.7;flex:1;">Built a fashion brand from zero using brand, content, and community. Zero paid ads. Grew to acquisition and sold the business.</p>
+    </div>
+
+  </div>
+</section>
 
 <!-- STATS — 3 items -->
 <div class="stats-strip">
@@ -422,42 +479,82 @@ footer{background:var(--black);padding:1.5rem 2.5rem;display:flex;align-items:ce
 
 </section>
 
-<!-- GETMARKETING -->
-<section style="background:var(--black);padding:7rem 0;border-top:1px solid var(--border-d);">
+<!-- HOW I WORK -->
+<section style="padding:7rem 0;background:var(--cream);border-top:1px solid var(--border);" id="how">
   <div class="wrap">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;">
+    <p class="section-eyebrow">How I work</p>
 
-      <div data-r>
-        <p style="font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:1.5rem;">My own venture</p>
-        <p style="font-size:clamp(2rem,4vw,4rem);font-weight:900;letter-spacing:-.03em;color:rgba(255,255,255,.1);line-height:1;text-transform:uppercase;">GETMARKETING</p>
-        <span style="font-family:var(--hand);font-size:clamp(2.2rem,4.5vw,4.5rem);font-weight:700;color:var(--cream);line-height:1;margin-top:-.35em;display:block;">GetMarketing.</span>
-        <p style="font-size:.92rem;font-weight:300;color:rgba(255,255,255,.5);line-height:1.85;margin-top:2rem;max-width:44ch;">An AI-powered marketing platform built for DACH B2B founders who don't have a full marketing team but need one. A multi-agent system that handles SEO, content, LinkedIn, and strategy with minimal founder input.</p>
-        <p style="font-size:.92rem;font-weight:300;color:rgba(255,255,255,.5);line-height:1.85;margin-top:1rem;max-width:44ch;">This is the product I build because I kept seeing the same problem across 50+ projects: great companies, no marketing system. GetMarketing fixes that.</p>
-        <div style="margin-top:2.5rem;display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
-          <a href="https://getmarketing.team" target="_blank" style="font-family:var(--body);font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:var(--cream);color:var(--black);border:1.5px solid var(--cream);padding:.75rem 1.75rem;text-decoration:none;transition:background .2s,color .2s;display:inline-block;" onmouseover="this.style.background='var(--red)';this.style.borderColor='var(--red)';this.style.color='#fff'" onmouseout="this.style.background='var(--cream)';this.style.borderColor='var(--cream)';this.style.color='var(--black)'">getmarketing.team →</a>
-          <span style="font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.25);">Launching July 2026</span>
+    <!-- 3 statements with inline quotes -->
+    <div style="border-top:1px solid var(--border);">
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border);" data-r>
+        <div style="padding:2.75rem 2.75rem 2.75rem 0;border-right:1px solid var(--border);">
+          <p style="font-size:clamp(1.3rem,2.2vw,2rem);font-weight:700;letter-spacing:-.02em;color:var(--black);margin-bottom:.85rem;line-height:1.1;">Grow your pipeline from channels you already have.</p>
+          <p style="font-size:.9rem;font-weight:300;color:var(--muted);line-height:1.7;">Most businesses are sitting on untapped potential in SEO, LinkedIn, or paid. I find where your growth is stuck and fix it.</p>
+        </div>
+        <div style="padding:2.75rem 0 2.75rem 2.75rem;display:flex;gap:1rem;align-items:flex-start;">
+          <div style="width:40px;height:40px;border-radius:50%;background:#1a1a1a;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;color:rgba(255,255,255,.5);">N</div>
+          <div>
+            <p style="font-size:.9rem;font-weight:300;font-style:italic;color:var(--black);line-height:1.65;margin-bottom:.5rem;">"Darya helped us turn complex deep-tech topics into clear, effective LinkedIn and media campaigns. Her work contributed meaningfully to increasing our brand visibility in a niche B2B market."</p>
+            <p style="font-size:.75rem;font-weight:400;color:var(--muted);">Nicholas Ottersbach, Commercial & BD Leader</p>
+          </div>
         </div>
       </div>
 
-      <div data-r data-d="1" style="display:flex;flex-direction:column;gap:1px;background:var(--border-d);">
-        <div style="background:#1a1a1a;padding:2rem;">
-          <p style="font-size:.65rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.75rem;">Strategy Agent</p>
-          <span style="font-family:var(--hand);font-size:1.8rem;font-weight:700;color:var(--cream);display:block;line-height:1;">Builds your marketing plan.</span>
-          <p style="font-size:.82rem;font-weight:300;color:rgba(255,255,255,.4);line-height:1.65;margin-top:.5rem;">Analyses your business, your competitors, and your market. Outputs a clear 90-day plan.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border);" data-r>
+        <div style="padding:2.75rem 2.75rem 2.75rem 0;border-right:1px solid var(--border);">
+          <p style="font-size:clamp(1.3rem,2.2vw,2rem);font-weight:700;letter-spacing:-.02em;color:var(--black);margin-bottom:.85rem;line-height:1.1;">Know exactly where your next client comes from.</p>
+          <p style="font-size:.9rem;font-weight:300;color:var(--muted);line-height:1.7;">Vague marketing produces vague results. I build tracking, attribution, and channel ownership so you always know what's working and what to cut.</p>
         </div>
-        <div style="background:#1a1a1a;padding:2rem;">
-          <p style="font-size:.65rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.75rem;">Content & SEO Agent</p>
-          <span style="font-family:var(--hand);font-size:1.8rem;font-weight:700;color:var(--cream);display:block;line-height:1;">Writes and publishes.</span>
-          <p style="font-size:.82rem;font-weight:300;color:rgba(255,255,255,.4);line-height:1.65;margin-top:.5rem;">SEO-optimised content, LinkedIn posts, and GEO-ready copy. Ready to go, not ready to edit for three hours.</p>
+        <div style="padding:2.75rem 0 2.75rem 2.75rem;display:flex;gap:1rem;align-items:flex-start;">
+          <div style="width:40px;height:40px;border-radius:50%;background:#1a1a1a;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;color:rgba(255,255,255,.5);">K</div>
+          <div>
+            <p style="font-size:.9rem;font-weight:300;font-style:italic;color:var(--black);line-height:1.65;margin-bottom:.5rem;">"She's not someone who waits for opportunities. She creates them. Practical, sharp, and solution-driven."</p>
+            <p style="font-size:.75rem;font-weight:400;color:var(--muted);">Ketan B. Barve, Founder & CEO, Felipillon</p>
+          </div>
         </div>
-        <div style="background:#1a1a1a;padding:2rem;">
-          <p style="font-size:.65rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.75rem;">PM Agent</p>
-          <span style="font-family:var(--hand);font-size:1.8rem;font-weight:700;color:var(--cream);display:block;line-height:1;">Keeps everything moving.</span>
-          <p style="font-size:.82rem;font-weight:300;color:rgba(255,255,255,.4);line-height:1.65;margin-top:.5rem;">Tracks what's working, flags what isn't, and tells you what to focus on next. No more guessing.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;" data-r>
+        <div style="padding:2.75rem 2.75rem 2.75rem 0;border-right:1px solid var(--border);">
+          <p style="font-size:clamp(1.3rem,2.2vw,2rem);font-weight:700;letter-spacing:-.02em;color:var(--black);margin-bottom:.85rem;line-height:1.1;">Stop running marketing yourself.</p>
+          <p style="font-size:.9rem;font-weight:300;color:var(--muted);line-height:1.7;">Founders shouldn't be their own CMO, strategist, and operator at once. I take ownership of the growth function so you can focus on the business.</p>
+        </div>
+        <div style="padding:2.75rem 0 2.75rem 2.75rem;display:flex;gap:1rem;align-items:flex-start;">
+          <div style="width:40px;height:40px;border-radius:50%;background:#1a1a1a;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;color:rgba(255,255,255,.5);">K</div>
+          <div>
+            <p style="font-size:.9rem;font-weight:300;font-style:italic;color:var(--black);line-height:1.65;margin-bottom:.5rem;">"You feel like she's genuinely on your team."</p>
+            <p style="font-size:.75rem;font-weight:400;color:var(--muted);">Ketan B. Barve, Founder & CEO, Felipillon</p>
+          </div>
         </div>
       </div>
 
     </div>
+
+    <!-- Process steps -->
+    <div style="margin-top:5rem;">
+      <p class="section-eyebrow">My end-to-end offer</p>
+      <div style="border-top:1px solid var(--border);">
+        <div style="display:grid;grid-template-columns:60px 1fr;align-items:center;padding:1.5rem 0;border-bottom:1px solid var(--border);cursor:default;" data-r>
+          <span style="font-size:clamp(2rem,3.5vw,3.5rem);font-weight:300;color:rgba(0,0,0,.12);letter-spacing:-.04em;line-height:1;">1.</span>
+          <span style="font-family:var(--hand);font-size:clamp(2rem,3.5vw,3.2rem);font-weight:700;color:var(--black);letter-spacing:-.02em;line-height:1;">Audit</span>
+        </div>
+        <div style="display:grid;grid-template-columns:60px 1fr;align-items:center;padding:1.5rem 0;border-bottom:1px solid var(--border);cursor:default;" data-r>
+          <span style="font-size:clamp(2rem,3.5vw,3.5rem);font-weight:300;color:rgba(0,0,0,.12);letter-spacing:-.04em;line-height:1;">2.</span>
+          <span style="font-family:var(--hand);font-size:clamp(2rem,3.5vw,3.2rem);font-weight:700;color:var(--black);letter-spacing:-.02em;line-height:1;">Strategy</span>
+        </div>
+        <div style="display:grid;grid-template-columns:60px 1fr;align-items:center;padding:1.5rem 0;border-bottom:1px solid var(--border);cursor:default;" data-r>
+          <span style="font-size:clamp(2rem,3.5vw,3.5rem);font-weight:300;color:rgba(0,0,0,.12);letter-spacing:-.04em;line-height:1;">3.</span>
+          <span style="font-family:var(--hand);font-size:clamp(2rem,3.5vw,3.2rem);font-weight:700;color:var(--black);letter-spacing:-.02em;line-height:1;">Execution</span>
+        </div>
+        <div style="display:grid;grid-template-columns:60px 1fr;align-items:center;padding:1.5rem 0;border-bottom:1px solid var(--border);cursor:default;" data-r>
+          <span style="font-size:clamp(2rem,3.5vw,3.5rem);font-weight:300;color:rgba(0,0,0,.12);letter-spacing:-.04em;line-height:1;">4.</span>
+          <span style="font-family:var(--hand);font-size:clamp(2rem,3.5vw,3.2rem);font-weight:700;color:var(--black);letter-spacing:-.02em;line-height:1;">Measurement</span>
+        </div>
+        <p style="font-size:.78rem;font-weight:300;color:var(--muted);padding-top:1rem;" data-r>+ all the channels your business needs to grow</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
