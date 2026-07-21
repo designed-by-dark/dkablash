@@ -1,0 +1,20 @@
+# dkablash.com
+
+> Darya Kablash is a growth consultant based in Berlin, Germany. She helps B2B companies and SMEs (KMU) grow through SEO, GEO (Generative Engine Optimization), LinkedIn marketing, and Google Ads.
+
+Darya Kablash works with B2B companies in the DACH region (Germany, Austria, Switzerland), offering hands-on growth consulting rather than agency-style retainers. Her services include:
+
+- Consulting: strategic growth advice for B2B companies and SMEs
+- SEO & GEO: search engine optimization and optimization for AI/LLM-based answer engines
+- LinkedIn: organic LinkedIn strategy and content for B2B lead generation
+- Google Ads: paid search campaign strategy and management
+
+## Pages
+
+- [Home](https://dkablash.com/): overview of services, experience, and results
+- [Impressum](https://dkablash.com/impressum.html): legal notice
+- [Datenschutz](https://dkablash.com/datenschutz.html): privacy policy
+
+## Contact
+
+Email: darya@getmarketing.team
